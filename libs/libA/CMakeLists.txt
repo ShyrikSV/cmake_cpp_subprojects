@@ -11,7 +11,12 @@ target_include_directories(libA
     PUBLIC 
         $<INSTALL_INTERFACE:include>                                # in case we will install our lib 
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>      # when we use lib - where to look up public headers
+        
     PRIVATE 
         ${CMAKE_CURRENT_SOURCE_DIR}/src                             # private headers - only for build lib
         ${CMAKE_CURRENT_SOURCE_DIR}/src/PrivClass
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/..>
 )
+
+add_dependencies(libA libB)
+target_link_libraries(libA PRIVATE libB)

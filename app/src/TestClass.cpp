@@ -27,3 +27,9 @@ void TestClass::test_libB_out()
     LibClassB lb;
     lb.test_libB_out();
 }
+
+void TestClass::test_libA_libB_out()
+{
+    LibClassA la;
+    la.test_libA_libB_out();
+}
