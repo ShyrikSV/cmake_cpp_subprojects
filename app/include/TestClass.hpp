@@ -7,4 +7,6 @@ public:
     void test_out();
     void test_libA_out();
     void test_libA_priv_out();
+
+    void test_libB_out();
 };

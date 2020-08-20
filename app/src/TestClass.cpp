@@ -2,6 +2,8 @@
 #include <iostream>
 
 #include "libA/include/LibClassA.hpp"
+#include "libB/include/LibClassB.hpp"
+
 
 void TestClass::test_out()
 {
@@ -18,4 +20,10 @@ void TestClass::test_libA_priv_out()
 {
     LibClassA la;
     la.test_libA_private_out();
+}
+
+void TestClass::test_libB_out()
+{
+    LibClassB lb;
+    lb.test_libB_out();
 }
