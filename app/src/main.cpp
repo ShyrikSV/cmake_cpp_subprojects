@@ -6,5 +6,7 @@ int main(int argc, char** argv)
     tc.test_out();
 
     tc.test_libA_out();
+
+    tc.test_libA_priv_out();
     return 0;
 }

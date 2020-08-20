@@ -13,3 +13,9 @@ void TestClass::test_libA_out()
     LibClassA la;
     la.test_libA_out();
 }
+
+void TestClass::test_libA_priv_out()
+{
+    LibClassA la;
+    la.test_libA_private_out();
+}
